@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Zapfino;
+    src: local(Zapfino), url('fonts/Zapfino.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: Noteworthy;
+    src: local(Noteworthy), url('fonts/Noteworthy.ttc') format('opentype');
+}
