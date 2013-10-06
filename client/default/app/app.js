@@ -17,7 +17,7 @@
 
             .when('/chocolates', {
                 templateUrl: 'app/views/templates/choco-gallery.html',
-                controller: 'ChocolatesCtrl'
+                controller: 'CardCtrl'
             })
 
             .otherwise({

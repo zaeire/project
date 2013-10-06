@@ -1,16 +1,9 @@
-    <!-- GALLERY CONTAINER -->
-    <div class="box">
-        {{ chocoGallery }}
-        <div id="chocolates"></div>
+<card-view dataset="data" effect="rotate" on-create="onCreate($cardview)" ></card-view>
 
-        <!-- GALLERY NAV-->
-        <ul id="nav">
-            <li id="prev" onclick="gallery.prev()">-</li>
-            <li onclick="gallery.goToPage(1)"></li>
-            <li onclick="gallery.goToPage(2)"></li>
-            <li onclick="gallery.goToPage(3)"></li>
-            <li onclick="gallery.goToPage(4)"></li>
-            <li onclick="gallery.goToPage(5)"></li>
-            <li id="next" onclick="gallery.next()">+</li>
-        </ul>
+
+    <div ng-repeat="card in data">
+        <h3>{{card.title}}</h3>
+        <img ng-src="{{ card.img }}" alt="thumb" width="600" height="400">
+        <p>{{card.text}}</p>
+        <button ng-click="add()">Add</buton>
     </div>

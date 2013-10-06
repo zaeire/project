@@ -212,35 +212,35 @@
             }];
 
             ImgBank.chocoImgs = [{
-                img: 'imgs/600x400/choco011.jpg',
+                img: 'imgs/chocoGallery/choco1.jpg',
                 width: 473,
                 height: 400,
-                name: "Hazelnut Crunch",
-                desc: ''
+                title: "Hazelnut Crunch",
+                text: ''
             }, {
-                img: 'imgs/600x400/choco014.jpg',
+                img: 'imgs/chocoGallery/choco2.jpg',
                 width: 267,
                 height: 400,
-                name: "Raspberry Cream",
-                desc: ''
+                title: "Raspberry Cream",
+                text: ''
             }, {
-                img: 'imgs/600x400/choco017.jpg',
+                img: 'imgs/chocoGallery/choco3.jpg',
                 width: 600,
                 height: 400,
-                name: "Honeycomb",
-                desc: ''
+                title: "Honeycomb",
+                text: ''
             }, {
-                img: 'imgs/600x400/choco020.jpg',
+                img: 'imgs/chocoGallery/choco4.jpg',
                 width: 600,
                 height: 400,
-                name: "Mint Truffles",
-                desc: ''
+                title: "Mint Truffles",
+                text: ''
             }, {
-                img: 'imgs/600x400/choco023.jpg',
+                img: 'imgs/chocoGallery/choco5.jpg',
                 width: 473,
                 height: 400,
-                name: "Baileys Cream",
-                desc: ''
+                title: "Baileys Cream",
+                text: ''
             }];
 
             return {

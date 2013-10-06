@@ -3,12 +3,28 @@
     "use strict";
 
     angular.module("website")
-        .directive("chocogallery", function() {
-            console.log("chocogallery");
+        .directive("zoom-gallery", function(ImageBank) {
 
-            return {
-                restrict: "A",
-                templateUrl: '../app/views/template/choco-gallery.html'
+            var data = ImageBank.chocoImgs;
+            console.info("zoom-gallery", data);
+
+            return function(data) {
+
+                deck = new CardView('#zoom-wrapper', {
+                    effect: 'zoom',
+                    dataset: data,
+                    onUpdateContent: function(el, data) {
+                        el.querySelector('img').src = data.img;
+                        el.querySelector('h3').innerHTML = data.title;
+                        el.querySelector('p').innerHTML = data.text;
+                    }
+                });
+
+                document.addEventListener('touchmove', function(e) {
+                    e.preventDefault();
+                }, false);
+
             };
+
         });
 })(window, window.angular);
